@@ -128,10 +128,12 @@ bool checkBt() {
 void openlock() {
   digitalWrite(led, 1);
   digitalWrite(Lock, 1);
+  delay(1000);
 }
 
 
 void lock() {
   digitalWrite(led, 0);
   digitalWrite(Lock, 0);
+  delay(1000);
 }
