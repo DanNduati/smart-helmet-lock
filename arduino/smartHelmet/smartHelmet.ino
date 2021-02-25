@@ -44,8 +44,9 @@ void loop() {
   //!BTSerial.available()
   //if (!BTSerial.available() && !(mfrc522.PICC_IsNewCardPresent()))
   //return;
+  
 
-  /*if (btPresent) {
+  if (btPresent) {
     if (checkBt()) {
       unlock = true;
       openlock();
@@ -55,8 +56,8 @@ void loop() {
       lock();
       unlock = false;
     }
-    }
-    else if(rfidPresent()){
+  }
+  else if (rfidPresent()) {
     if (checkRfid()) {
       unlock = true;
       openlock();
@@ -65,24 +66,12 @@ void loop() {
       lock();
       unlock = false;
     }
-    }
-    else{
-    return;
-    }*/
-
-  if (!btPresent)
-    return;
-
-  if (checkBt()) {
-    unlock = true;
-    openlock();
-    return;
   }
   else {
-    lock();
-    unlock = false;
+    return;
   }
-}
+		
+  }
 
 bool btPresent() {
   if (BTSerial.available()) {
