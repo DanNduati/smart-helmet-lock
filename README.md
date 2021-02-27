@@ -1,7 +1,7 @@
 # Smart Helmet
 <p align="center">
   <img src="https://github.com/DanNduati/smart-helmet/blob/main/images/smartHelmet0.JPG" height="500">
-  <img  height="500" src="https://github.com/DanNduati/smart-helmet/blob/main/images/smartHelmet1.JPG">
+  <img  height="500" src="https://github.com/DanNduati/smart-helmet/blob/main/images/smartHelmet2.JPG">
 </p>
 
 
