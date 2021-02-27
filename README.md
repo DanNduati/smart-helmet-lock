@@ -1,8 +1,9 @@
 # Smart Helmet
 <p align="center">
-  <img width="460" height="300" src="https://github.com/DanNduati/smart-helmet/blob/main/images/smartHelmet0.JPG">
+  <img src="https://github.com/DanNduati/smart-helmet/blob/main/images/smartHelmet0.JPG">
 </p>
-
+<img align="right" src="https://github.com/DanNduati/smart-helmet/blob/main/images/smartHelmet1.JPG">
+<img align="left" src="https://github.com/DanNduati/smart-helmet/blob/main/images/smartHelmet2.JPG">
 ## Hardware components 
 
 ### 1.HC-05
