@@ -33,26 +33,28 @@ void loop() {
   while (!doorOpened) {
     //check for bt first
     if (BTSerial.available() > 0) {
-      if (verifyBt(BTSerial.read())) {
+      inputByte = BTSerial.read();
+      if (verifyBt(inputByte)) {
         doorOpened = true;
         digitalWrite(testLed, 1);
-        digitalWrite(lock,1);
+        digitalWrite(lock, 1);
         delay(1000);
         digitalWrite(testLed, 0);
-        digitalWrite(lock,0);
+        digitalWrite(lock, 0);
         doorOpened = false;
       }
+
     }
-    
+
     //check for rfid
     else if (getID()) {
       if (verifyRfid()) {
         doorOpened = true;
         digitalWrite(testLed, 1);
-        digitalWrite(lock,1);
+        digitalWrite(lock, 1);
         delay(1000);
         digitalWrite(testLed, 0);
-        digitalWrite(lock,0);
+        digitalWrite(lock, 0);
         doorOpened = false;
       }
     }
@@ -94,6 +96,9 @@ bool verifyRfid() {
 bool verifyBt(char inByte) {
   if (inByte == 49) {
     return 1;
+  }
+  else {
+    return 0;
   }
 }
 
