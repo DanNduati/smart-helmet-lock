@@ -10,7 +10,7 @@
 ## Hardware components 
 
 ### 1. HC-05
-- get incoming input bytes
+- get unlock input byte from the app
 
 ### 2.RC522 RFID reader
 - read rfid tags
